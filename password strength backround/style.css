@@ -1,0 +1,57 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+img {
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+  object-position: center;
+  filter: blur(10px);
+  width: 100%;
+  height: 100%;
+}
+.container {
+  background-color: white;
+  padding: 20px;
+}
+.container h2 {
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
+.container small {
+  display: block;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+.container form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.container form label {
+  margin: 5px 0;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.container form input:not(:last-of-type) {
+  margin: 5px 0;
+  padding: 5px 10px;
+}
+.container form input:last-of-type {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 0;
+  margin: 10px 0 0 0;
+}

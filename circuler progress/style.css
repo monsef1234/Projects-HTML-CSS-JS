@@ -1,0 +1,108 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #111011;
+}
+.pre-loader {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  z-index: 100;
+}
+.none {
+  display: none;
+}
+.container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.container .box {
+  position: relative;
+  background-image: linear-gradient(to right, #242324, #000);
+  border-radius: 5px;
+  padding: 40px 50px;
+  text-align: center;
+  color: #5c5a5c;
+  transition: 0.3s;
+  max-width: 100%;
+}
+.container .box:hover {
+  transform: translateY(-15px);
+}
+.container .box:hover #percentage {
+  font-size: 60px;
+  top: 65%;
+}
+.container .box svg circle.main {
+  fill: transparent;
+  stroke-width: 15px;
+  stroke-dasharray: 505;
+  stroke-linecap: butt;
+}
+.container .box svg circle.second {
+  stroke: #1d1c1d79;
+  stroke-width: 15px;
+  fill: transparent;
+  stroke-linecap: butt;
+}
+.container .box:nth-child(1) svg circle.main {
+  stroke: #04fc47;
+  stroke-dashoffset: 505;
+  animation: first-circle 1s linear forwards;
+}
+.container .box:nth-child(2) svg circle.main {
+  stroke: #049eff;
+  stroke-dashoffset: 505;
+  animation: second-circle 1s linear forwards;
+}
+.container .box:nth-child(3) svg circle.main {
+  stroke: #fe04f9;
+  stroke-dashoffset: 505;
+  animation: third-circle 1s linear forwards;
+}
+.container .box span#percentage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -175%);
+  font-size: 30px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.container .box:hover #percentage {
+  font-size: 60px;
+  top: 64%;
+  color: white;
+}
+.container .box span#edit {
+  font-size: 15px;
+}
+/* Animation */
+@keyframes first-circle {
+  100% {
+    stroke-dashoffset: 50.5;
+  }
+}
+@keyframes second-circle {
+  100% {
+    stroke-dashoffset: 75.75;
+  }
+}
+@keyframes third-circle {
+  100% {
+    stroke-dashoffset: 202;
+  }
+}
