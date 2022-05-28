@@ -1,0 +1,36 @@
+.courses {
+  height: auto;
+  display: flex;
+  align-items: center;
+  padding: 10rem 0;
+}
+.courses .courses_container {
+  text-align: center;
+}
+.courses .courses_container h1 {
+  text-transform: capitalize;
+  margin-bottom: 4rem;
+}
+.courses .courses_container .boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  gap: 1.5rem;
+}
+.courses .courses_container .boxes .box {
+  border: 2px solid var(--clrBg2);
+  border-radius: 3px;
+  background: var(--clrBg1);
+  transition: var(--transition);
+}
+.courses .courses_container .boxes .box:hover {
+  background: transparent;
+}
+.courses .courses_container .boxes .box .text {
+  padding: 1.5rem;
+}
+.courses .courses_container .boxes .box .text h3 {
+  text-transform: capitalize;
+}
+.courses .courses_container .boxes .box .text p {
+  margin: 1rem 0 2rem 0;
+}

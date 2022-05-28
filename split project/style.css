@@ -1,0 +1,53 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+}
+body {
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
+h1 {
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  font-size: 80px;
+}
+h1 span {
+  position: absolute;
+  width: 0;
+  height: 5px;
+  background-color: green;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+}
+h1:hover span {
+  width: 100%;
+}
+h1::before,
+h1::after {
+  content: attr(data-split);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.3s 0.2s;
+}
+h1::before {
+  color: red;
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+}
+h1::after {
+  color: blue;
+
+  clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
+}
+h1:hover::before {
+  transform: translateX(-5%);
+}
+h1:hover::after {
+  transform: translateX(5%);
+}
