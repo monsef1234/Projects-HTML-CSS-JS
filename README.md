@@ -7,4 +7,4 @@ These are some projects that i made and i used HTML CSS JS , most of these proje
 > Arabic Content
 - [اتعلم في ساعة](https://www.youtube.com/channel/UCs8PwUcH93uchrEZkB8ltNw)
 # Notice
-Sorry if didn't find clean code in one of these projects cuz i did it for myself i didn't know that i will post them in my github .
+Sorry if you didn't find clean code in one of these projects cuz i did it for myself i didn't know that i will post them in my github .
