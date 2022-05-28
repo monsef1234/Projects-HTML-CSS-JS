@@ -1,0 +1,41 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.container .box {
+  position: relative;
+}
+.container .box img {
+  /* width: 1000px; */
+  display: block;
+  width: 80px;
+  object-position: center;
+  height: 600px;
+  border-radius: 15px;
+  object-fit: cover;
+  transition: 1s;
+}
+.container .box h1 {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  color: white;
+  left: 20px;
+  opacity: 0;
+  transition: 1s;
+  color: red;
+}
+.block {
+  opacity: 1 !important;
+}
+.width {
+  width: 600px !important;
+}

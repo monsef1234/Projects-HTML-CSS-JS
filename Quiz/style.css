@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --bg: #c3cee0;
+  --btn-color: #6f3b85;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--bg);
+  font-family: "Mulish", sans-serif;
+}
+.container {
+  background-color: white;
+  max-width: 100%;
+  margin: 0 15px;
+  box-shadow: 0 0 3px rgb(0, 0, 0, 0.3), 0 0 6px rgb(0, 0, 0, 0.3);
+  border-radius: 5px;
+  position: relative;
+}
+.container .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.container .question {
+  padding: 40px;
+}
+.container .question h2 {
+  text-align: center;
+  width: 400px;
+  max-width: 100%;
+  margin-bottom: 30px;
+}
+.container .question .suggestions {
+  line-height: 2;
+}
+.container .question .suggestions .suggest label {
+  text-transform: capitalize;
+}
+.container button.submit {
+  all: unset;
+  display: block;
+  text-align: center;
+  width: 100%;
+  padding: 15px 0;
+  background-color: var(--btn-color);
+  text-transform: capitalize;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.result {
+  background-color: white;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.none {
+  display: none;
+}
+.result p {
+  padding: 15px;
+}
+.result button {
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 15px 0;
+  background-color: var(--btn-color);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: white;
+  text-transform: capitalize;
+  font-weight: bold;
+  cursor: pointer;
+}

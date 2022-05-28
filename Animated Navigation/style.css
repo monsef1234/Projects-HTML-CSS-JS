@@ -1,0 +1,77 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-image: linear-gradient(to bottom, #e5f8ff 50%, #3e79dd 50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ul {
+  list-style: none;
+}
+.container {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 0 2px 0 black;
+  border-radius: 3px;
+  max-width: 100%;
+}
+.container ul {
+  display: flex;
+  gap: 20px;
+  font-weight: bold;
+  text-transform: capitalize;
+  transform: translateX(0);
+  opacity: 1;
+  width: 236px;
+  transition: all 0.5s linear;
+  /* flex-wrap: wrap; */
+  /* justify-content: center; */
+}
+.active ul {
+  width: 0;
+  opacity: 0;
+}
+.icon {
+  position: relative;
+  margin-left: 20px;
+  width: 30px;
+  height: 30px;
+  /* display: flex; */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon .line1,
+.icon .line2 {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: red;
+  position: absolute;
+  transition: 1s;
+}
+.icon .line1 {
+  transform: rotate(45deg);
+}
+.icon .line2 {
+  transform: rotate(-45deg);
+}
+.active .icon {
+  margin-left: 0;
+}
+.active .icon .line1 {
+  transform: rotate(-180deg) translateY(4px);
+}
+.active .icon .line2 {
+  transform: rotate(180deg) translateY(-4px);
+}

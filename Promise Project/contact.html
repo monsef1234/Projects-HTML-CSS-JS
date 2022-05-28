@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Education Website</title>
+    <!-- ICONSCOUT CDN -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css"
+    />
+    <!-- SWIPER JS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- MAIN CSS FILE -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/courses.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <style>
+      body {
+        background-image: url("images/bg-texture.png");
+      }
+    </style>
+    <!-- SWIPER JS SCRIPT -->
+    <script
+      defer
+      src="https://unpkg.com/swiper@8/swiper-bundle.min.js"
+    ></script>
+    <script defer src="js/swiper.js"></script>
+    <!-- MAIN SCRIPT -->
+    <script defer src="js/main.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container nav_container">
+        <a href="index.html"><h4>egator</h4></a>
+        <ul id="menu">
+          <li><a href="index.html">home</a></li>
+          <li><a href="about.html">about</a></li>
+          <li><a href="courses.html">courses</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+        <button id="open-menu-btn"><i class="uil uil-bars"></i></button
+        ><button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+      </div>
+    </header>
+    <div class="contact">
+      <div class="container contact_container">
+        <div class="box">
+          <img src="images/contact.svg" alt="" />
+          <h1>contact us</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque,
+            sequi. Maiores veritatis facilis commodi at eum tenetur dolor
+          </p>
+          <div class="info">
+            <i class="uil uil-phone"></i>
+            <span>+213 794 693 243</span>
+          </div>
+          <div class="info">
+            <i class="uil uil-envelope"></i>
+            <span>monsef4566@gmail.com</span>
+          </div>
+          <div class="info">
+            <i class="uil uil-location-point"></i>
+            <span>Batna, Algeria</span>
+          </div>
+          <div class="medias">
+            <div class="media">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.facebook.com/bouras.monsef/"
+                ><i class="uil uil-facebook-f"></i
+              ></a>
+            </div>
+            <div class="media">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.instagram.com/_.monsef._/"
+                ><i class="uil uil-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <form action="https://formspree.io/f/myyobjly" method="post">
+            <div class="full-name">
+              <input
+                type="text"
+                name="f-name"
+                id="f-name"
+                placeholder="first name"
+              />
+              <input
+                type="text"
+                name="l-name"
+                id="l-name"
+                placeholder="last name"
+              />
+            </div>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="your email address"
+            />
+            <textarea
+              name="msg"
+              id="msg"
+              cols="30"
+              rows="10"
+              placeholder="write your message"
+            ></textarea>
+            <button class="btn">send message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container footer_container">
+        <div class="box">
+          <h3>egator</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde
+            asperiores,
+          </p>
+        </div>
+        <div class="box">
+          <h3>permalinks</h3>
+          <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="courses.html">courses</a></li>
+            <li><a href="contact.html">contact</a></li>
+          </ul>
+        </div>
+        <div class="box">
+          <h3>primacy</h3>
+          <ul>
+            <li><a href="#">privacy policy</a></li>
+            <li><a href="#">Terms and conditions</a></li>
+            <li><a href="#">refund policy</a></li>
+          </ul>
+        </div>
+        <div class="box">
+          <h3>contact us</h3>
+          <span>+213 794 693 243</span>
+          <address>monsef4566@gmail.com</address>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

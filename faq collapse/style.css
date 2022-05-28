@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600&display=swap");
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Hind Madurai", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  background-color: #eeeef0;
+}
+.container {
+  max-width: 100%;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.container h1 {
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.container .box {
+  background-color: transparent;
+  box-shadow: 0 0 3px 0 black;
+  border-radius: 5px;
+  padding: 35px 20px;
+  width: 550px;
+  max-width: 100%;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.2s;
+}
+.container .box .head {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  /* margin-bottom: 20px; */
+}
+.container .box .head h3 {
+  font-size: 22px;
+}
+.container .box .head .icons {
+  flex: 1;
+  text-align: right;
+}
+.container .box .head .icons i {
+  font-size: 22px;
+  cursor: pointer;
+  color: #97989a;
+}
+.container .box .head .icons i:last-of-type {
+  display: none;
+}
+.container .box .answer {
+  display: block;
+  height: 0;
+  overflow: hidden;
+  font-weight: 500;
+  /* transition: 0.5s; */
+}
+.comments {
+  display: none;
+}
+.fa-comment {
+  font-size: 140px;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.1;
+}
+.fa-comment:first-of-type {
+  top: -10px;
+  left: -30px;
+  transform: rotateY(180deg);
+  color: blue;
+}
+.fa-comment:last-of-type {
+  color: green;
+  left: 15px;
+  top: 15px;
+}

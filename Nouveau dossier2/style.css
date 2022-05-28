@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500&display=swap");
+:root {
+  --bg: #32398a;
+  --bg2: #212252;
+  --bg3: #13152e;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Mulish", sans-serif;
+  background-color: var(--bg);
+  color: white;
+}
+.container {
+  background-color: var(--bg2);
+  padding: 20px;
+  width: 350px;
+  box-shadow: 0 0 6px var(--bg2), 0 0 9px var(--bg2);
+  border-radius: 3px;
+  max-width: 100%;
+}
+.container h2 {
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+.container .genratezone {
+  height: 40px;
+  width: 100%;
+  background-color: var(--bg3);
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.container .genratezone input[type="text"] {
+  outline: none;
+  color: white;
+  border: none;
+  background-color: transparent;
+  padding: 0 10px;
+  font-size: 18px;
+  width: 85%;
+}
+.container .genratezone i {
+  background-color: var(--bg);
+  width: 15%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 18px;
+  text-align: right;
+}
+.container .features {
+  width: 100%;
+  line-height: 2;
+}
+.container .features .length,
+.container .features .upperletters,
+.container .features .lowercaseletters,
+.container .features .numbers,
+.container .features .symbols {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.container .features .length input {
+  width: 50px;
+  padding: 2px;
+}
+.container .features button {
+  width: 100%;
+  padding: 10px 0;
+  margin-top: 15px;
+  cursor: pointer;
+  text-transform: capitalize;
+  background-color: var(--bg);
+  color: white;
+  border: none;
+  transition: 0.3s;
+  font-weight: bold;
+  border-radius: 3px;
+}
+.container .features button:active {
+  transform: scale(0.96);
+}

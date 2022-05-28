@@ -1,0 +1,66 @@
+:root {
+  --first-c: #ccccce;
+  --second-c: #76889f;
+  --words-c: #6b6b6b;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.container {
+  padding: 15px;
+  border: 2px solid black;
+  text-align: center;
+  width: 500px;
+  border-radius: 3px;
+}
+.container h2 {
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+.container .inputs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 15px 0;
+}
+.container .inputs * {
+  width: calc(100% / 6 - 10px);
+  height: 80px;
+  text-align: center;
+  font-size: 50px;
+}
+.container .text {
+  margin: 0 auto;
+  max-width: 350px;
+  background-color: var(--first-c);
+  padding: 10px;
+  color: var(--words-c);
+  font-size: 15px;
+}
+.container .inputs input:focus {
+  outline-color: var(--second-c);
+}
+.container .inputs input:disabled {
+  background-color: green;
+  color: red;
+}

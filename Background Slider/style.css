@@ -1,0 +1,72 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(img/photo-1495467033336-2effd8753d51.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+body::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.479);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transition: 0.4s;
+}
+.container {
+  width: 70vw;
+  height: 70vh;
+  position: relative;
+  box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.16), 0 0 10px 0px rgba(0, 0, 0, 0.23);
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+  border-radius: 3px;
+}
+.container .box {
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  transition: 0.4s;
+  overflow: hidden;
+  position: absolute;
+  background-size: cover;
+  background-position: center center;
+  top: -15vh;
+  left: -15vw;
+}
+.active {
+  opacity: 1 !important;
+}
+.angle-right,
+.angle-left {
+  border: 3px solid orange;
+  position: absolute;
+  padding: 10px 15px;
+  top: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.angle-right {
+  left: 86%;
+}
+.angle-left {
+  left: 14%;
+}
+.angle-right i,
+.angle-left i {
+  font-size: 30px;
+  color: white;
+}

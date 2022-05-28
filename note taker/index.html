@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <div class="fixed">
+      <div class="box">
+        <span id="close">X</span>
+        <div id="allnote"></div>
+      </div>
+    </div>
+    <div class="container">
+      <h1>note taker</h1>
+      <h2>add a new note:</h2>
+      <form>
+        <div class="box">
+          <label for="note">note:</label>
+          <textarea
+            name="note"
+            id="note"
+            placeholder="write your note here"
+          ></textarea>
+        </div>
+        <button id="add">add note</button>
+      </form>
+      <div class="yournotes">
+        <h3 id="remove">no notes added yet!</h3>
+      </div>
+    </div>
+  </body>
+</html>

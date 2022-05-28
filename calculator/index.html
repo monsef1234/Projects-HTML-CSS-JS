@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.10/clipboard.min.js"
+    ></script>
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="result-clear">
+        <input type="text" id="result" value="" readonly />
+        <input type="text" name="remove" id="remove" value="&#8592;" readonly />
+        <input type="text" class="pink" id="clear" value="C" readonly />
+      </div>
+      <div class="buttons first-row">
+        <input type="text" id="button" readonly value="7" />
+        <input type="text" id="button" readonly value="8" />
+        <input type="text" id="button" readonly value="9" />
+        <input type="text" id="num-first" readonly value="/" />
+      </div>
+      <div class="buttons second-row">
+        <input type="text" id="button" readonly value="4" />
+        <input type="text" id="button" readonly value="5" />
+        <input type="text" id="button" readonly value="6" />
+        <input type="text" id="button" readonly value="-" />
+      </div>
+      <div class="buttons third-row">
+        <input type="text" id="button" readonly value="1" />
+        <input type="text" id="button" readonly value="2" />
+        <input type="text" id="button" readonly value="3" />
+        <input type="text" id="button" readonly value="+" />
+      </div>
+      <div class="buttons fourth-row">
+        <input type="text" id="num-first" readonly value="." />
+        <input type="text" id="button" readonly value="0" />
+        <input type="text" id="num-first" readonly value="*" />
+        <input type="text" id="equal" class="pink" readonly value="=" />
+      </div>
+    </div>
+    <button class="btn" data-clipboard-target="#result">
+      Click Here For COPY your Calculation.
+    </button>
+  </body>
+</html>

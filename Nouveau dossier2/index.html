@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <!-- <i class="fa-solid fa-clipboard"></i> -->
+    <div class="container">
+      <h2>password generator</h2>
+      <div class="genratezone">
+        <input type="text" name="text" id="text" readonly />
+        <i class="fa-solid fa-clipboard"></i>
+      </div>
+      <div class="features">
+        <div class="length">
+          <label for="numberl">password length</label>
+          <input
+            type="number"
+            name="numberl"
+            id="numberl"
+            min="0"
+            max="15"
+            value="0"
+          />
+        </div>
+        <div class="upperletters">
+          <label for="upper">Include uppercase letters</label>
+          <input class="checked" type="checkbox" name="upper" id="upper" />
+        </div>
+        <div class="lowercaseletters">
+          <label for="lower">Include lowercase letters</label>
+          <input class="checked" type="checkbox" name="lower" id="lower" />
+        </div>
+        <div class="numbers">
+          <label for="number">Include numbers</label>
+          <input class="checked" type="checkbox" name="number" id="number" />
+        </div>
+        <div class="symbols">
+          <label for="symbols">Include symbols</label>
+          <input class="checked" type="checkbox" name="symbols" id="symbols" />
+        </div>
+        <button class="generate">generate password</button>
+      </div>
+    </div>
+  </body>
+</html>

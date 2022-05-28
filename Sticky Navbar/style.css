@@ -1,0 +1,103 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.container {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+header {
+  color: white;
+  background-color: #1f1f1f;
+  text-transform: capitalize;
+  /* height: 70px; */
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  transition: 0.3s;
+}
+.fixed {
+  position: fixed;
+  top: 0;
+  background-color: white;
+  color: black;
+  /* height: 50px; */
+}
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .container .logo {
+  font-size: 15px;
+}
+header .container ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+header .container ul li {
+  cursor: pointer;
+  padding: 20px 0;
+  transition: 0.3s;
+}
+header.fixed .container ul li {
+  padding: 15px 0;
+}
+header .container ul li:hover {
+  color: red;
+}
+.main {
+  background-image: url("maxresdefault.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+.main::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgb(0, 0, 0, 50%);
+  z-index: 0;
+}
+.main h1 {
+  position: relative;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+.main p {
+  width: 900px;
+  max-width: 100%;
+  line-height: 1.6;
+  font-weight: bold;
+  position: relative;
+}
+section {
+  margin: 40px 0;
+}
+section h2 {
+  margin: 10px 0;
+  text-transform: capitalize;
+}
+section p {
+  line-height: 1.6;
+}
